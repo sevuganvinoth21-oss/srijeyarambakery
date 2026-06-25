@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Jeyaram Bakery &amp; Sweets — Kalayarkovil</title>
+  <meta name="description" content="Freshly baked cakes, pure ghee sweets and hot snacks from Sri Jeyaram Bakery & Sweets, Kalayarkovil. Order on WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+  <!-- ===== TOP ANNOUNCEMENT MARQUEE ===== -->
+  <div class="topbar">
+    <div class="topbar-track">
+      <span>Extra 5% off on your first WhatsApp order</span><span class="dot">·</span>
+      <span>Fresh stock baked every morning</span><span class="dot">·</span>
+      <span>Free delivery within Kalayarkovil</span><span class="dot">·</span>
+      <span>Custom cakes for birthdays &amp; functions</span><span class="dot">·</span>
+      <span>Extra 5% off on your first WhatsApp order</span><span class="dot">·</span>
+      <span>Fresh stock baked every morning</span><span class="dot">·</span>
+      <span>Free delivery within Kalayarkovil</span><span class="dot">·</span>
+      <span>Custom cakes for birthdays &amp; functions</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#top" class="brand" aria-label="Sri Jeyaram Bakery and Sweets">
+      <span class="brand-mark" aria-hidden="true">ஜ</span>
+      <span class="brand-text">
+        <small class="brand-pre">SRI</small>
+        <strong>Jeyaram</strong>
+        <small class="brand-sub">BAKERY &amp; SWEETS</small>
+      </span>
+    </a>
+
+    <div class="header-actions">
+      <button class="ico-btn" id="searchOpen" aria-label="Search">🔍</button>
+      <button class="ico-btn cart-trigger" id="cartOpen" aria-label="Open cart">
+        🧺<span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== SEARCH BAR (toggled by 🔍) ===== -->
+  <div class="searchbar" id="searchbar" hidden>
+    <input type="search" id="searchInput" placeholder="Search cakes, sweets, snacks…" autocomplete="off" />
+    <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+  </div>
+
+  <!-- ===== GREEN FEATURE STRIP ===== -->
+  <div class="features">
+    <div class="features-track">
+      <span>✔ Baked fresh daily</span><span class="sep">|</span>
+      <span>🛵 On-time delivery</span><span class="sep">|</span>
+      <span>🥛 Pure ghee sweets</span><span class="sep">|</span>
+      <span>🌰 Made with groundnut oil</span><span class="sep">|</span>
+      <span>💬 WhatsApp ordering</span><span class="sep">|</span>
+      <span>✔ Baked fresh daily</span><span class="sep">|</span>
+      <span>🛵 On-time delivery</span><span class="sep">|</span>
+      <span>🥛 Pure ghee sweets</span><span class="sep">|</span>
+      <span>🌰 Made with groundnut oil</span><span class="sep">|</span>
+      <span>💬 WhatsApp ordering</span><span class="sep">|</span>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORY CIRCLES ===== -->
+  <nav class="cat-rail" id="catRail" aria-label="Shop by category"></nav>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <section class="hero">
+    <div class="hero-track" id="heroTrack">
+      <article class="slide slide-1">
+        <div class="slide-copy">
+          <span class="slide-kicker">Every Morning · 6 AM – 9:30 PM</span>
+          <h2>Fresh from<br>the oven</h2>
+          <p>Cakes, pure ghee sweets &amp; hot snacks — made fresh and sent over WhatsApp.</p>
+          <a href="#bestsellers" class="pill-link">Shop best sellers</a>
+        </div>
+        <div class="slide-art" aria-hidden="true"><span>🎂</span><span>🍮</span><span>🥨</span></div>
+      </article>
+      <article class="slide slide-2">
+        <div class="slide-copy">
+          <span class="slide-kicker">Birthdays · Weddings · Functions</span>
+          <h2>Custom cakes,<br>made to order</h2>
+          <p>Tell us the flavour, weight and date. We'll bake it fresh for your day.</p>
+          <a href="#visit" class="pill-link">Order a custom cake</a>
+        </div>
+        <div class="slide-art" aria-hidden="true"><span>🎂</span><span>🧁</span><span>❤️</span></div>
+      </article>
+      <article class="slide slide-3">
+        <div class="slide-copy">
+          <span class="slide-kicker">Pure Ghee · Made Daily</span>
+          <h2>Sweets &amp; halwa,<br>made the slow way</h2>
+          <p>Mysore pak, laddu, kaju katli and rich halwa — fresh by the half kilo.</p>
+          <a href="#cat-Sweets" class="pill-link">Explore sweets</a>
+        </div>
+        <div class="slide-art" aria-hidden="true"><span>🍬</span><span>🟠</span><span>🟤</span></div>
+      </article>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- ===== BEST SELLERS ===== -->
+  <section class="block block-white" id="bestsellers">
+    <div class="block-head">
+      <span class="orn left"></span>
+      <h2>Our Best Sellers</h2>
+      <span class="orn right"></span>
+    </div>
+    <div class="pcard-list" id="bestSellers"></div>
+    <div class="view-all-wrap">
+      <a href="#menu" class="btn-green">View All</a>
+    </div>
+  </section>
+
+  <!-- ===== FULL MENU (category sections) ===== -->
+  <div id="menu"></div>
+  <div id="catSections"></div>
+
+  <!-- ===== GIFTING BANNER ===== -->
+  <section class="gifting" id="gifting">
+    <div class="gifting-inner">
+      <h2>Perfect gifts for every occasion</h2>
+      <p>From housewarmings to weddings — sweet boxes and savoury hampers, packed fresh and delivered with care.</p>
+      <a class="btn-gold" href="https://wa.me/918489777046?text=Hi%20Sri%20Jeyaram%20Bakery%2C%20I'd%20like%20to%20ask%20about%20gift%20boxes%20%2F%20bulk%20orders." target="_blank" rel="noopener">Ask about gift boxes</a>
+    </div>
+  </section>
+
+  <!-- ===== KITCHEN REELS (autoplay on scroll) ===== -->
+  <section class="reels" id="films">
+    <div class="block-head">
+      <span class="orn left"></span>
+      <h2>From Our Kitchen</h2>
+      <span class="orn right"></span>
+    </div>
+    <p class="reels-sub">Videos play as you scroll and pause when they leave the screen.</p>
+    <!--
+      OWNER NOTE: replace each <source src="..."> with your own bakery Reels (.mp4).
+      Keep them muted + short so they autoplay on phones.
+    -->
+    <div class="reels-row">
+      <div class="reel">
+        <video class="cine" muted loop playsinline preload="metadata"
+          poster="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=80">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4" />
+        </video>
+        <span class="reel-cap">Cakes, fresh every morning</span>
+      </div>
+      <div class="reel">
+        <video class="cine" muted loop playsinline preload="metadata"
+          poster="https://images.unsplash.com/photo-1605197788044-5a32c7078486?auto=format&fit=crop&w=600&q=80">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+        </video>
+        <span class="reel-cap">Sweets, made the slow way</span>
+      </div>
+      <div class="reel">
+        <video class="cine" muted loop playsinline preload="metadata"
+          poster="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
+        </video>
+        <span class="reel-cap">Snacks, hot from the kadai</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR STORY ===== -->
+  <section class="story" id="story">
+    <div class="block-head">
+      <span class="orn left"></span>
+      <h2>Our Story</h2>
+      <span class="orn right"></span>
+    </div>
+    <div class="story-inner">
+      <p>
+        Sri Jeyaram Bakery &amp; Sweets started with one promise to Kalayarkovil — everything you
+        taste here is made fresh, with real ghee and good groundnut oil, and no shortcuts. Our day
+        begins before sunrise so the first puffs are hot by the time the town wakes up.
+      </p>
+      <div class="story-stats">
+        <div><strong>5 AM</strong><span>First batch out</span></div>
+        <div><strong>40+</strong><span>Items on the counter</span></div>
+        <div><strong>100%</strong><span>Made in-house</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISIT ===== -->
+  <section class="visit" id="visit">
+    <div class="visit-card">
+      <div class="block-head small">
+        <span class="orn left"></span>
+        <h2>Visit &amp; Order</h2>
+        <span class="orn right"></span>
+      </div>
+      <p class="visit-line"><strong>📍 Where</strong> · Main Road, Kalayarkovil, Sivagangai District, Tamil Nadu</p>
+      <p class="visit-line"><strong>🕒 Open</strong> · Every day · 6:00 AM – 9:30 PM</p>
+      <p class="visit-line"><strong>💬 WhatsApp orders</strong> · +91 84897 77046</p>
+      <a class="btn-gold" href="https://wa.me/918489777046?text=Hi%20Sri%20Jeyaram%20Bakery%2C%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="foot-brand">
+      <span class="brand-mark small" aria-hidden="true">ஜ</span>
+      <div>
+        <strong>Sri Jeyaram Bakery &amp; Sweets</strong>
+        <small>Kalayarkovil · Freshly baked, every morning</small>
+      </div>
+    </div>
+    <p class="foot-note">© <span id="year"></span> Sri Jeyaram Bakery &amp; Sweets. Made with ghee, groundnut oil and a little love.</p>
+  </footer>
+
+  <!-- ===== MENU DRAWER (left) ===== -->
+  <aside class="menu-drawer" id="menuDrawer" aria-label="Menu" aria-hidden="true">
+    <div class="menu-head">
+      <strong>Menu</strong>
+      <button class="drawer-close" id="menuClose" aria-label="Close menu">✕</button>
+    </div>
+    <nav class="menu-nav" id="menuNav"></nav>
+  </aside>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Your order" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Your basket</h3>
+      <button class="drawer-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer-items" id="drawerItems">
+      <p class="empty-msg" id="emptyMsg">Your basket is empty. Add something fresh from the counter. 🧁</p>
+    </div>
+    <div class="drawer-foot">
+      <div class="total-row"><span>Total</span><span class="total-amt" id="totalAmt">₹0</span></div>
+      <form class="order-form" id="orderForm" novalidate>
+        <label>Your name<input type="text" id="custName" placeholder="e.g. Priya" autocomplete="name" required /></label>
+        <label>Phone number<input type="tel" id="custPhone" placeholder="10-digit mobile" autocomplete="tel" inputmode="numeric" required /></label>
+        <div class="toggle" role="group" aria-label="Delivery or pickup">
+          <button type="button" class="toggle-opt active" data-mode="Delivery">🛵 Delivery</button>
+          <button type="button" class="toggle-opt" data-mode="Pickup">🏬 Pickup</button>
+        </div>
+        <label id="locWrap">Delivery location<input type="text" id="custLoc" placeholder="Street, area, landmark" autocomplete="street-address" /></label>
+        <p class="form-error" id="formError" hidden></p>
+        <button type="submit" class="btn-gold btn-block" id="placeOrder">Place order on WhatsApp</button>
+        <p class="form-fine">You'll be taken to WhatsApp with your order ready to send.</p>
+      </form>
+    </div>
+  </aside>
+
+  <!-- toast -->
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
